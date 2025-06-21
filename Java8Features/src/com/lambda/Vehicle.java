@@ -1,8 +1,10 @@
 package com.lambda;
 
 @FunctionalInterface
-public abstract interface Vehicle {
+public interface Vehicle {
 
-	public void start();
+	public void start();        // supports only one public abstract methpd - functional inteface
    
+	default void stop() {
+	}
 }
